@@ -1,0 +1,29 @@
+{
+  "name": "Node_MySQL",
+  "version": "0.0.1",
+  "description": "Connecting mysql to node.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:syam1123/nodeDB.git"
+  },
+  "keywords": [
+    "MySQL",
+    "Node.JS"
+  ],
+  "author": "Syam S Pillai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syam1123/nodeDB/issues"
+  },
+  "homepage": "https://github.com/syam1123/nodeDB",
+  "dependencies": {
+    "express": "~4.13.1",
+    "fs": "0.0.2",
+    "mysql": "~2.9.0",
+    "path": "^0.12.7"
+  }
+}
