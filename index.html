@@ -3,16 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>DB</title>
-        <link rel="stylesheet" href="css/styles.css" >
-        <script src="js/mysql.js" charset="utf-8"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </head>
     <body>
-        <form class="" action="" method="get">
-            Username:<input type="text" name="username" placeholder="Enter username">
+        <form class="" action="http://localhost:9090/home" method="GET">
+            Username:<input type="text" name="username" placeholder="Enter username" id="#username" required>
             <br>
-            Password:<input type="text" name="password" placeholder="Enter password">
+            Password:<input type="text" name="password" placeholder="Enter password" id="#password" required>
             <br>
-            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submit" value="Login" onclick="getinput()">
+        </form>
+        <form class="" action="http://localhost:9090/signup" method="post">
+            <input type="submit" name="Register" value="Sign Up">
         </form>
     </body>
 </html>
