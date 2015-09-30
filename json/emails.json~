@@ -1,0 +1,31 @@
+
+[
+{
+"from": "Person1",
+"date": 1234,
+"subject": "Something went wrong",
+"id": 111,
+"starred": false
+},
+{
+"from": "Person2",
+"date": 2345,
+"subject": "Will it work?",
+"id": 222,
+"starred": false
+},
+{
+"from": "Person3",
+"date": 4356,
+"subject": "Whts going on here",
+"id": 333,
+"starred": false
+},
+{
+"from": "Person4",
+"date": 1125,
+"subject": "Ohh my god",
+"id": 444,
+"starred": false
+}
+]

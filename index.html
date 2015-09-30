@@ -1,21 +1,57 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>DB</title>
+<!doctype html>
+<html ng-app="mailBox">
+  <head>
+    <meta charset="utf-8">
+    <title>gmail</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <style>
+        .logout{
+            float: right;
+            padding: 70px;
+        }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+        <img src="img/qburst.png" alt="" />
+        </div>
+        <div class="search">
+            <input type="text" >
+        </div>
+    </header>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    </head>
-    <body>
-        <form class="" action="http://localhost:9090/home" method="GET">
-            Username:<input type="text" name="username" placeholder="Enter username" id="#username" required>
-            <br>
-            Password:<input type="text" name="password" placeholder="Enter password" id="#password" required>
-            <br>
-            <input type="submit" name="submit" value="Login" onclick="getinput()">
-        </form>
-        <form class="" action="http://localhost:9090/signup" method="post">
-            <input type="submit" name="Register" value="Sign Up">
-        </form>
-    </body>
+    <main class="main" role="main">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Compose</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Sent</a></li>
+                <li><a href="#">Starred</a></li>
+                <li><a href="#">Draft</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+        <div class="logout" style="float : right">
+                <a href="/">Logout</a>
+        </div>
+      <div ng-view ui-view class="inboxView"></div>
+    </main>
+
+
+    <script src="/home/syam/project/nodeDB/lib/jquery-v1.11.1.js"></script>
+    <script src="/home/syam/project/nodeDB/lib/angular-v1.2.22.js"></script>
+    <script src="/home/syam/project/nodeDB/lib/angular-route-v1.2.22.js"></script>
+    <script src="/home/syam/project/nodeDB/lib/angular-sanitize-v1.2.22.js"></script>
+    <!-- Application Files -->
+    <script src="/home/syam/project/nodeDB/js/app.js"></script>
+    <script src="/home/syam/project/nodeDB/js/controllers/InboxCtrl.js"></script>
+    <script src="/home/syam/project/nodeDB/js/controllers/EmailCtrl.js"></script>
+    <script src="/home/syam/project/nodeDB/js/controllers/SentCtrl.js"></script>
+    <script src="/home/syam/project/nodeDB/js/factories/InboxFactory.js"></script>
+    <script src="/home/syam/project/nodeDB/js/factories/EmailFactory.js"></script>
+    <script src="/home/syam/project/nodeDB/js/directives/InboxDrctv.js"></script>
+    <script src="/home/syam/project/nodeDB/js/directives/EmailDrctv.js"></script>
+  </body>
 </html>

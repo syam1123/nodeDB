@@ -1,0 +1,13 @@
+<div class="inbox">
+  <ul class="inbox__list">
+    <li ng-repeat="message in inbox.messages ">
+      <div class="inbox__list-info">
+          <a href="" ng-click="inbox.goToMessage(message.id);">
+        <span class="inbox__list-from">  {{ message.from }} </span>
+        <span class="inbox__list-subject"> {{ message.subject }} </span>
+        <span class="inbox__list-date"> {{ message.date | date: 'dd/MM/yyyy' }} </span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
